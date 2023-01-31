@@ -11,14 +11,14 @@ const App: FC = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div className="min-h-screen px-5 lg:pt-28 text-center sm: pt-12 pb-10">
+    <div className="min-h-screen px-5 lg:pt-32 text-center sm: pt-12 pb-10">
       <img
         className="h-36 w-36 rounded-full m-auto mb-5 border-violet-700 border-4"
         src={pfp}
       />
-      <h1 className="text-3xl">Ben Wehrly</h1>
-      <h2 className="text-2xl">Front-End / React Engineer</h2>
-      <h3 className="text-xl">Lexington, KY</h3>
+      <h1 className="text-3xl w-fit mx-auto">Ben Wehrly</h1>
+      <h2 className="text-2xl w-fit mx-auto">Front-End / React Engineer</h2>
+      <h3 className="text-xl w-fit mx-auto">Lexington, KY</h3>
       <Buttons tabIndex={tabIndex} setTabIndex={setTabIndex} />
       <AnimatePresence initial={false} mode="wait">
         <motion.div

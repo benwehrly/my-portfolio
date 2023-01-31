@@ -9,7 +9,7 @@ export const Buttons = ({ tabIndex, setTabIndex }: ContentProps) => {
   const sections = ["About Me", "My Work", "Get in touch"];
 
   return (
-    <div className="flex lg:justify-around sm: justify-center items-center flex-wrap w-3/4 m-auto my-3">
+    <div className="flex lg:justify-between lg:px-28 sm: justify-center sm:px-2 items-center flex-wrap w-full m-auto my-3">
       {sections.map((section: string, i: number) => (
         <Button
           key={i}
